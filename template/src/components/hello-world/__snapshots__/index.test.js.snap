@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello Snapshot should render header with content 1`] = `"<div><h1>Hello, World!</h1></div>"`;
