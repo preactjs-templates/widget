@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/preactjs-templates/widget/blob/master/logo.png?raw=true" height=300px>
+  <img src="https://github.com/preactjs-templates/widget/blob/master/readme-logo.png?raw=true" height=300px>
   <br />
   <br />
   <h4>Preact Widget Template</h4>
