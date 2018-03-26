@@ -18,13 +18,13 @@ $ npm run dev
 
 ### Commands
 
-*dev:* Starts a dev server with hotreload and widget placeholedr.
+*dev:* Starts a dev server with hotreload and widget placeholder.
 
-*build:* Builds production ready UMD bundle ready to be embeded in any page.
+*build:* Builds production ready UMD bundle ready to be embedded in any page.
 
 *start:* Either starts a production ready dev server demo-ing your widget or local env based on your environment variable.
 
-*test:* Run your awesome UI tests with Jest.
+*test:* Runs your awesome UI tests with Jest.
 
 *serve:* Builds and serves your widget.
 
