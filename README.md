@@ -20,7 +20,9 @@ $ npm run dev
 
 *dev:* Starts a dev server with hotreload and widget placeholder.
 
-*build:* Builds production ready UMD bundle ready to be embedded in any page.
+*build:* Builds a documentation web app in `build` folder and a production ready UMD bundle ready to be embedded in any non-preact page.
+
+*dist:* Builds bundles in `dist` folder to be consumed by other `preact` web apps.
 
 *start:* Either starts a production ready dev server demo-ing your widget or local env based on your environment variable.
 
