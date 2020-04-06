@@ -8,9 +8,8 @@
   "source": "components/hello-world/index.js",
   "scripts": {
     "test": "NODE_ENV=test jest",
-    "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
     "build": "preact build --no-prerender --clean --template src/index.ejs --service-worker false",
-    "serve": "npm run build && preact serve",
+    "serve": "preact serve",
     "dev": "preact watch --template src/index.ejs",
     "dist": "microbundle --entry src/components/hello-world/index.js"
   },
@@ -20,7 +19,6 @@
   "devDependencies": {
     "eslint": "^4.5.0",
     "identity-obj-proxy": "^3.0.0",
-    "if-env": "^1.0.0",
     "jest": "^21.2.1",
     "microbundle": "^0.6.0",
     "node-sass": "^4.5.3",
