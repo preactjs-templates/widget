@@ -22,7 +22,7 @@
     "jest": "^21.2.1",
     "microbundle": "^0.6.0",
     "node-sass": "^4.5.3",
-    "preact-cli": "^2.0.2",
+    "preact-cli": "^2.2.1",
     "preact-render-to-string": "^3.7.0",
     "preact-widget-scripts": "^0.6.0",
     "sass-loader": "^6.0.6"
