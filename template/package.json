@@ -2,65 +2,48 @@
   "name": "widgets-template",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/index.js",
-  "umd:main": "dist/index.umd.js",
-  "module": "dist/index.m.js",
   "source": "components/hello-world/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "umd:main": "dist/index.umd.js",
   "scripts": {
-    "test": "NODE_ENV=test jest",
-    "build": "preact build --no-prerender --clean --template src/index.ejs --service-worker false",
-    "serve": "preact serve",
-    "dev": "preact watch --template src/index.ejs",
-    "dist": "microbundle --entry src/components/hello-world/index.js"
+    "build": "preact build --no-prerender --template src/template.html --no-sw",
+    "dist": "microbundle --entry src/components/hello-world/index.js",
+    "serve": "sirv build --port 8080 --cors --single",
+    "dev": "preact watch --template src/template.html",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "preact",
+    "ignorePatterns": [
+      "build/"
+    ]
   },
   "keywords": [],
   "author": "Zouhir <zouhir@zouhir.org>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^4.5.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^21.2.1",
-    "microbundle": "^0.6.0",
-    "node-sass": "^4.5.3",
-    "preact-cli": "^2.0.2",
-    "preact-render-to-string": "^3.7.0",
-    "preact-widget-scripts": "^0.6.0",
-    "sass-loader": "^6.0.6"
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-preact-pure": "^2.2.3",
+    "eslint": "^6.8.0",
+    "eslint-config-preact": "^1.1.0",
+    "jest": "^26.3.0",
+    "jest-preset-preact": "^4.0.2",
+    "microbundle": "^0.12.3",
+    "preact-cli": "^3.0.1",
+    "sirv-cli": "1.0.3"
   },
   "dependencies": {
-    "preact": "^8.5.2",
-    "preact-compat": "^3.17.0",
-    "preact-habitat": "^3.1.0",
-    "preact-render-to-string": "^4.1.0",
-    "preact-router": "^2.5.7"
+    "preact": "^10.4.7",
+    "preact-habitat": "^3.3.0",
+    "preact-render-to-string": "^5.1.10",
+    "preact-router": "^3.2.1"
   },
   "jest": {
-    "verbose": true,
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
-    "moduleFileExtensions": [
-      "js",
-      "jsx"
-    ],
-    "testEnvironment": "node",
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|scss|less)$": "identity-obj-proxy",
-      "^react$": "preact-compat",
-      "^react-dom$": "preact-compat"
-    },
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
-    "moduleDirectories": [
-      "node_modules",
-      "src"
+    "preset": "jest-preset-preact",
+    "setupFiles": [
+      "<rootDir>/src/tests/__mocks__/setupTests.js"
     ]
   }
 }
