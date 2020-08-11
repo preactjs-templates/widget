@@ -12,6 +12,6 @@ describe("Hello logic", () => {
 describe("Hello Snapshot", () => {
   test("should render header with content", () => {
     const tree = shallow(<Hello />);
-    expect(tree).toMatchSnapshot();
+    expect(tree.find("h1").text()).toBe("Hello, World!");
   });
 });
