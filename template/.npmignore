@@ -1,8 +1,0 @@
-# blacklist all
-**
-
-# include whitelist
-!dist/*
-!LICENSE
-!package.json
-!README.md

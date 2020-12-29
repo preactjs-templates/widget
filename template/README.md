@@ -6,17 +6,14 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve  demo with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
+# build npm ready bundles to be consumed by other Preact web apps
 npm run build
 
-# build npm ready bundles to be consumed by other Preact web apps
-npm run dist
-
-# test the production build locally
-npm run serve
+# lint the project with eslint to find code style issues
+npm run lint
 
 # run tests with jest and enzyme
 npm run test
