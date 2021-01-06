@@ -6,9 +6,9 @@
 </div>
 
 ## Overview
-- This is template for creating a Preact widget
+- This is template for creating a Preact widget or a component library
 - [Preact-CLi](https://github.com/preactjs/preact-cli): Used for running a local development environment to use your widget in
-- [Microbundle](https://github.com/developit/microbundle): Used for bundling your widget for use in other Preact web apps
+- [Microbundle](https://github.com/developit/microbundle): Used for bundling your widget/library for use in other Preact web apps
 - [Preact](https://preactjs.com/): General information about how to work with Preact, not specific to this template
 
 ## Usage
@@ -28,7 +28,9 @@ your machine, it will start the development server on a random port.
 
 -   `npm run dev`: Run a development server with Preact-CLI to test your widget
 
--   `npm run build`: NPM-ready build with Microbundle, for use in other Preact web apps
+-   `npm run build:widget`: NPM-ready build with Microbundle, to distribute your widget to be consumed by other Preact web applications
+
+-   `npm run build:lib`: NPM-ready build with Microbundle, to distribute your component as a Preact component library
 
 -   `npm run lint`: Lint files use ESLint
 

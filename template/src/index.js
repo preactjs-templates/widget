@@ -1,9 +1,10 @@
-import { h } from "preact";
+import habitat from "preact-habitat";
 
-export default function App(props) {
-  return (
-    <div>
-      <h1 style={{ color: props.color }}>Hello, World!</h1>
-    </div>
-  );
-}
+import Widget from "./component";
+
+let _habitat = habitat(Widget);
+
+_habitat.render({
+  selector: '[data-widget-host="habitat"]',
+  clean: true
+});

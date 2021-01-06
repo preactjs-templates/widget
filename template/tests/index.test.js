@@ -1,7 +1,7 @@
 import { h } from "preact";
 import { shallow } from 'enzyme';
 
-import Hello from "../src";
+import Hello from "../src/component";
 
 describe("Hello logic", () => {
   test("should be able to run tests", () => {

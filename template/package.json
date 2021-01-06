@@ -7,9 +7,10 @@
   "module": "dist/index.module.js",
   "umd:main": "dist/index.umd.js",
   "scripts": {
-    "dev": "preact watch --src demo --template demo/template.html",
-    "build": "microbundle build",
-    "lint": "eslint '{demo,src,test}/**/*.js'",
+    "dev": "preact watch --template src/template.html",
+    "build:widget": "microbundle build",
+    "build:lib": "microbundle build -i src/component.js",
+    "lint": "eslint '{src,test}/**/*.js'",
     "test": "jest"
   },
   "files": [
