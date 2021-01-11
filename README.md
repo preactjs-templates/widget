@@ -7,7 +7,7 @@
 
 ## Overview
 - This is template for creating a Preact widget or a component library
-- [Preact-CLi](https://github.com/preactjs/preact-cli): Used for running a local development environment to use your widget in
+- [Preact-CLI](https://github.com/preactjs/preact-cli): Used for running a local development environment to use your widget in
 - [Microbundle](https://github.com/developit/microbundle): Used for bundling your widget/library for use in other Preact web apps
 - [Preact](https://preactjs.com/): General information about how to work with Preact, not specific to this template
 
