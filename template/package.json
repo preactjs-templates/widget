@@ -24,7 +24,7 @@
   },
   "author": "Zouhir <zouhir@zouhir.org>",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "preact": "^10.5.7"
   },
   "devDependencies": {
@@ -35,6 +35,7 @@
     "jest": "^26.3.0",
     "jest-preset-preact": "^4.0.2",
     "microbundle": "^0.13.0",
+    "preact": "^10.5.7",
     "preact-cli": "^3.0.5",
     "preact-habitat": "^3.3.0",
     "preact-render-to-string": "^5.1.12"

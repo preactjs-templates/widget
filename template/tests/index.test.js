@@ -3,12 +3,6 @@ import { shallow } from 'enzyme';
 
 import Hello from "../src/component";
 
-describe("Hello logic", () => {
-  test("should be able to run tests", () => {
-    expect(1 + 2).toEqual(3);
-  });
-});
-
 describe("Hello Snapshot", () => {
   test("should render header with content", () => {
     const tree = shallow(<Hello />);
