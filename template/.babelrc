@@ -1,3 +1,9 @@
 {
-  "presets": ["preact-widget-scripts/babel"]
+  "env": {
+    "test": {
+      "presets": [
+        ["preact-cli/babel", { "modules": "commonjs" }]
+      ]
+    }
+  }
 }
